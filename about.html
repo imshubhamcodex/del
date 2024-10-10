@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- barba.js import-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- gsap.js import-->
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <!-- tailwind.js import-->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <!--Google font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <!--Fontawesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- step.css import-->
+    <link href="./css/step.css" rel="stylesheet">
+    <!-- index.css import-->
+    <link href="./css/index.css" rel="stylesheet">
+    <!-- about.css import-->
+    <link href="./css/about.css" rel="stylesheet">
+
+    <title>DARK SHADOWS - ABOUT</title>
+</head>
+
+<body data-barba="wrapper">
+    <!--The transition of step :start-->
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!--The transition of step :end-->
+
+    <!--Main container :start-->
+    <section id="main" data-barba="container" data-barba-namespace="about">
+        <!--loading :start-->
+        <div id="parent-loading">
+            <div class="lds-dual-ring"></div>
+        </div>
+        <!--loading :end-->
+        <!--Mobile nav bar :start-->
+        <section id="mobile_nav_bar">
+            <section class="flex justify-around">
+                <section class="flex-1 pl-4 pt-4">
+                    <h2 onclick="enableLoading()" id="mobile_logo" class="text-white text-3xl" style="color: #00ffd3;">
+                        <a href="./index.html"><i class="fa fa-slack animate-spin"></i></a>
+                    </h2>
+                </section>
+                <section class="flex-2 pr-4 pt-4" onclick="toggleNav_About()">
+                    <i id="bar_icon" class="fa fa-bars text-white text-2xl" style="font-size: 30px;"></i>
+                </section>
+            </section>
+
+            <!--Blue loading :start-->
+            <section class="load-container">
+                <section class="loading-screen"></section>
+            </section>
+            <!--Blue loading :end-->
+            <!--White loading :start-->
+            <section class="load-container_0">
+                <section class="loading-screen_0"></section>
+            </section>
+            <!--White loading :end-->
+
+            <!--Nav Box :start-->
+            <section id="mobile_nav_items">
+                <!--Nav items :start-->
+                <ul class="text-white pl-12">
+                    <li onclick="enableLoading()">
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li onclick="enableLoading()">
+                        <a href="./levels.html">Levels</a>
+                    </li>
+                    <li onclick="enableLoading()">
+                        <a href="./settings.html">Settings</a>
+                    </li>
+                </ul>
+                <!--Nav items :end-->
+                <!--Circle :start-->
+                <section class="mobile_nav_circle">
+                    <svg class="motio-o-home-half" viewBox="0 0 100 100">
+                        <path class="isolation" fill="none" d="M12 50c0-21
+                                17-38
+                                38-38s38 17 38 38-17 38-38 38"></path>
+                    </svg>
+                </section>
+                <!--Circle :end-->
+            </section>
+            <!--Nav Box :end-->
+
+        </section>
+        <!--Mobile nav bar :end-->
+        <!--Navigation :start-->
+        <aside id="nav_aside" class="p-12">
+            <nav class="flex items-center justify-between flex-wrap">
+                <section class="flex items-center flex-shrink-0 text-white
+                        mr-6">
+
+                    <span class="nav_text font-bold text-2xl
+                            tracking-tight ml-2 mr-8" style="color:rgb(100, 255,
+                            218); cursor: pointer;"> <a href="./index.html"><i class="fa fa-code text-4xl"></i></a>
+                    </span>
+
+                </section>
+                <!--Nav items :start-->
+                <section id="nav_items" class="w-full block flex-grow
+                        lg:flex
+                        lg:items-center lg:w-auto">
+                    <section class="text-sm lg:flex-grow">
+                        <a href="./about.html" class="nav_text block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                            About
+                        </a>
+                        <a href="./skills.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                            Levels
+                        </a>
+                        <a href="./work.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                            Settings
+                        </a>
+                    </section>
+                </section>
+                <!--Nav items :end-->
+            </nav>
+        </aside>
+        <!--Navigation :end-->
+
+        <!--Main container :start-->
+        <main>
+            <!--About div :start-->
+            <section class="grid grid-cols-1 gap-4 text-white
+                    md:grid-cols-2" style="width: 78vw; margin: auto auto;text-align: justify;">
+                <section>
+                    <h1 class="about-me text-3xl font-bold">Dark Shadows</h1>
+                    <br />
+                    <p class="about-me text-lg"> "Dark Shadows" is a first-person horror adventure game set in a dark,
+                        atmospheric world. Players explore eerie environments filled with supernatural elements, solving
+                        puzzles and uncovering hidden mysteries. The game focuses on suspense, where stealth and
+                        strategy are key to avoiding terrifying creatures and navigating through haunted settings.
+                    </p>
+                    <br />
+                    <p class="about-me text-lg">
+                        Inspired by gothic horror themes, Dark Shadows immerses players in a world of fear and tension,
+                        with its haunting visuals and gripping storyline keeping them on edge throughout the gameplay.
+                    </p>
+                </section>
+            </section>
+            <!--About div :end-->
+
+            <section class="footer">
+                <hr>
+                <h1 class="text-center">Designed
+                    & Built by team DARKX</h1>
+            </section>
+            <!--Footer :end-->
+        </main>
+        <!--Main container :end-->
+
+    </section>
+    <!--Main container :end-->
+
+
+
+
+    <!--Scroll bar import-->
+    <link rel="stylesheet" href="./css/scroll.css">
+    <!-- index.js import-->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
