@@ -182,6 +182,12 @@ function contentAnimation_Home() {
     { duration: 0.7, opacity: 1, x: 0, stagger: 0.1, ease: "Expo.easeOut" },
     "-=0.6"
   );
+  tl.fromTo(
+    ".slideshow-container",
+    { duration: 0.7, opacity: 0, y: 100, ease: "Expo.easeOut" },
+    { duration: 0.7, opacity: 1, y: 0, stagger: 0.1, ease: "Expo.easeOut" },
+    "-=0.6"
+  );
 }
 
 function toggleNav_Home() {
@@ -470,25 +476,25 @@ function contentAnimation_Skills() {
   );
 
   tl.fromTo(
-    ".myskill_des h3, .myskill_des h2",
+    ".myskill_des h3, .myskill_des h2, .myskill_des img",
     { duration: 0.4, opacity: 0, y: -50, ease: "Back.easeOut", stagger: 0.1 },
     { duration: 0.4, opacity: 1, y: 0, ease: "Back.easeOut", stagger: 0.1 },
     "-=0.2"
   );
   tl.fromTo(
-    ".myskill_proto h3,.myskill_proto h2",
+    ".myskill_proto h3,.myskill_proto h2, .myskill_proto img",
     { duration: 0.35, opacity: 0, y: -50, ease: "Back.easeOut", stagger: 0.1 },
     { duration: 0.35, opacity: 1, y: 0, ease: "Back.easeOut", stagger: 0.1 },
     "-=0.2"
   );
   tl.fromTo(
-    ".myskill_animi h3,.myskill_animi h2",
+    ".myskill_animi h3,.myskill_animi h2, .myskill_animi img",
     { duration: 0.25, opacity: 0, y: -50, ease: "Back.easeOut", stagger: 0.1 },
     { duration: 0.25, opacity: 1, y: 0, ease: "Back.easeOut", stagger: 0.1 },
     "-=0.2"
   );
   tl.fromTo(
-    ".myskill_dev h3,.myskill_dev h2",
+    ".myskill_dev h3,.myskill_dev h2, .myskill_dev img",
     { duration: 0.2, opacity: 0, y: -50, ease: "Back.easeOut", stagger: 0.1 },
     { duration: 0.2, opacity: 1, y: 0, ease: "Back.easeOut", stagger: 0.1 },
     "-=0.2"
